@@ -1,8 +1,12 @@
 import axios from "axios";
 
+//const API = axios.create({
+//  baseURL: "http://localhost:5001/api",
+//});
 const API = axios.create({
-  baseURL: "http://localhost:5001/api",
+  baseURL: "https://fitness-track-l4ll.onrender.com",
 });
+
 
 export const UserSignUp = async (data) => API.post("/user/signup", data);
 export const UserSignIn = async (data) => API.post("/user/signin", data);
